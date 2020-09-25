@@ -1,5 +1,6 @@
 import React, { FunctionComponent, useEffect } from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+import Waveform from './Waveform';
 
 interface Props {
   hello: string;
@@ -14,9 +15,9 @@ const RecordScreen: FunctionComponent<Props> = (props: Props) => {
   });
 
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Record Screen</Text>
-      <Text>{props.hello}</Text>
+    <View style={{ flex: 1 }}>
+      <View style={{ marginTop: 100 }} />
+      <Waveform />
     </View>
   );
 };
