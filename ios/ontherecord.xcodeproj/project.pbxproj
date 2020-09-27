@@ -15,11 +15,12 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* ontherecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ontherecordTests.m */; };
+		34A2FE36251EDC660075D261 /* rap.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 34A2FE35251EDC660075D261 /* rap.m4a */; };
 		34C31A56251DB45B00BA2BFF /* WaveformManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C31A55251DB45B00BA2BFF /* WaveformManager.m */; };
 		34C31A60251DB4AC00BA2BFF /* WaveformManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C31A5F251DB4AC00BA2BFF /* WaveformManager.swift */; };
 		34C31A6E251DB59500BA2BFF /* WaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C31A6D251DB59500BA2BFF /* WaveformView.swift */; };
-		34C31A85251DB72B00BA2BFF /* AudioKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C31A83251DB72900BA2BFF /* AudioKit.xcframework */; };
-		34C31A86251DB72B00BA2BFF /* AudioKitUI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C31A84251DB72B00BA2BFF /* AudioKitUI.xcframework */; };
+		34C31AC3251EAC9C00BA2BFF /* AudioKitUI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C31AC1251EAC9C00BA2BFF /* AudioKitUI.xcframework */; };
+		34C31AC4251EAC9C00BA2BFF /* AudioKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C31AC2251EAC9C00BA2BFF /* AudioKit.xcframework */; };
 		585908FDCAA039FDEF8D4F10 /* libPods-ontherecord-ontherecordTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ACB7910693BCBE60F42239F /* libPods-ontherecord-ontherecordTests.a */; };
 		5E97D88C83C8E2135812EDF1 /* libPods-ontherecord.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6B2D1AE002647CD1BCC02A /* libPods-ontherecord.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
@@ -60,12 +61,13 @@
 		2ACB7910693BCBE60F42239F /* libPods-ontherecord-ontherecordTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ontherecord-ontherecordTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* ontherecord-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ontherecord-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* ontherecord-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ontherecord-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34A2FE35251EDC660075D261 /* rap.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = rap.m4a; sourceTree = "<group>"; };
 		34C31A48251DB3B400BA2BFF /* ontherecord-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ontherecord-Bridging-Header.h"; sourceTree = "<group>"; };
 		34C31A55251DB45B00BA2BFF /* WaveformManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WaveformManager.m; path = ontherecord/WaveformManager.m; sourceTree = "<group>"; };
 		34C31A5F251DB4AC00BA2BFF /* WaveformManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WaveformManager.swift; path = ontherecord/WaveformManager.swift; sourceTree = "<group>"; };
 		34C31A6D251DB59500BA2BFF /* WaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WaveformView.swift; path = ontherecord/WaveformView.swift; sourceTree = "<group>"; };
-		34C31A83251DB72900BA2BFF /* AudioKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AudioKit.xcframework; sourceTree = "<group>"; };
-		34C31A84251DB72B00BA2BFF /* AudioKitUI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AudioKitUI.xcframework; sourceTree = "<group>"; };
+		34C31AC1251EAC9C00BA2BFF /* AudioKitUI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AudioKitUI.xcframework; sourceTree = "<group>"; };
+		34C31AC2251EAC9C00BA2BFF /* AudioKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AudioKit.xcframework; sourceTree = "<group>"; };
 		7E95BCB4817264F31ECA01A9 /* libPods-ontherecord-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ontherecord-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AA8E0F390D57FD4A71497C /* Pods-ontherecord-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ontherecord-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-ontherecord-tvOSTests/Pods-ontherecord-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ontherecord/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -93,9 +95,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34C31AC4251EAC9C00BA2BFF /* AudioKit.xcframework in Frameworks */,
 				5E97D88C83C8E2135812EDF1 /* libPods-ontherecord.a in Frameworks */,
-				34C31A86251DB72B00BA2BFF /* AudioKitUI.xcframework in Frameworks */,
-				34C31A85251DB72B00BA2BFF /* AudioKit.xcframework in Frameworks */,
+				34C31AC3251EAC9C00BA2BFF /* AudioKitUI.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +140,7 @@
 		13B07FAE1A68108700A75B9A /* ontherecord */ = {
 			isa = PBXGroup;
 			children = (
+				34A2FE35251EDC660075D261 /* rap.m4a */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -156,8 +159,8 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				34C31A83251DB72900BA2BFF /* AudioKit.xcframework */,
-				34C31A84251DB72B00BA2BFF /* AudioKitUI.xcframework */,
+				34C31AC2251EAC9C00BA2BFF /* AudioKit.xcframework */,
+				34C31AC1251EAC9C00BA2BFF /* AudioKitUI.xcframework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				CA6B2D1AE002647CD1BCC02A /* libPods-ontherecord.a */,
@@ -166,6 +169,13 @@
 				7E95BCB4817264F31ECA01A9 /* libPods-ontherecord-tvOSTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34A2FDBB251ED8A90075D261 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -184,6 +194,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				A0C6B41E362C648447C5F511 /* Pods */,
+				34A2FDBB251ED8A90075D261 /* Recovered References */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -358,6 +369,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34A2FE36251EDC660075D261 /* rap.m4a in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
@@ -414,13 +426,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ontherecord-ontherecordTests/Pods-ontherecord-ontherecordTests-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ontherecord-ontherecordTests/Pods-ontherecord-ontherecordTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ontherecord-ontherecordTests/Pods-ontherecord-ontherecordTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -432,13 +443,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ontherecord/Pods-ontherecord-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ontherecord/Pods-ontherecord-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ontherecord/Pods-ontherecord-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -637,6 +647,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ontherecordTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -644,6 +655,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -662,6 +674,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ontherecordTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -669,6 +682,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -692,6 +706,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ontherecord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -722,6 +737,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ontherecord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -753,11 +769,13 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "ontherecord-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -784,11 +802,13 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "ontherecord-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -814,12 +834,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "ontherecord-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -845,12 +867,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "ontherecord-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",

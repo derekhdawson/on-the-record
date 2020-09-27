@@ -51,12 +51,6 @@ class WaveformView: UIView {
     plot.backgroundColor = UIColor.clear
     audioInputPlot.addSubview(plot)
 
-//    var constraints = [plot.leadingAnchor.constraint(equalTo: audioInputPlot.leadingAnchor)]
-//    constraints.append(plot.trailingAnchor.constraint(equalTo: audioInputPlot.trailingAnchor))
-//    constraints.append(plot.topAnchor.constraint(equalTo: audioInputPlot.topAnchor))
-//    constraints.append(plot.bottomAnchor.constraint(equalTo: audioInputPlot.bottomAnchor))
-//    constraints.forEach { $0.isActive = true }
-
     addSubview(audioInputPlot)
   }
 }
