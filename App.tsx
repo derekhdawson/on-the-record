@@ -6,8 +6,10 @@ import RecordScreen from './src/containers/RecordScreenContainer';
 import RecordingsScreen from './src/containers/RecordingsScreenContainer';
 import ProfileScreen from './src/containers/ProfileScreenContainer';
 import configureStore from './src/store/configureStore';
-import { Text } from 'react-native';
-// import Ionicons from 'react-native-vector-icons/Ionicons';
+import { Image, StyleSheet, View } from 'react-native';
+import recordTabIcon from './src/images/record-tab-icon.png';
+import recordingsTabIcon from './src/images/recordings-tab-icon.png';
+import profileTabIcon from './src/images/profile-tab-icon.png';
 
 const store = configureStore();
 const Tab = createBottomTabNavigator();
@@ -19,23 +21,55 @@ function App() {
         <Tab.Navigator
           screenOptions={({ route }) => ({
             tabBarIcon: ({ focused, color, size }) => {
-              let iconName;
-
+              let tabIcon;
               if (route.name === 'Record') {
-                iconName = focused
-                  ? 'ios-information-circle'
-                  : 'ios-information-circle-outline';
+                tabIcon = recordTabIcon;
               } else if (route.name === 'Recordings') {
-                iconName = focused ? 'ios-list-box' : 'ios-list';
+                tabIcon = recordingsTabIcon;
+              } else {
+                tabIcon = profileTabIcon;
               }
 
-              // You can return any component that you like here!
-              return <Text>hello world</Text>;
+              let tabIconContainerStyle = {
+                ...styles.tabIconContainer,
+              };
+
+              let tabIconStyle = {
+                ...styles.tabIconImage,
+              };
+
+              if (focused) {
+                tabIconStyle = {
+                  ...tabIconStyle,
+                  tintColor: '#125FB9',
+                };
+
+                tabIconContainerStyle = {
+                  ...tabIconContainerStyle,
+                  backgroundColor: '#243350',
+                };
+              }
+
+              return (
+                <View style={tabIconContainerStyle}>
+                  <Image source={tabIcon} style={tabIconStyle} />
+                </View>
+              );
             },
           })}
           tabBarOptions={{
-            activeTintColor: 'tomato',
-            inactiveTintColor: 'gray',
+            activeTintColor: 'red',
+            inactiveTintColor: 'yellow',
+            showLabel: false,
+            style: {
+              backgroundColor: 'transparent',
+              position: 'absolute',
+              left: 0,
+              right: 0,
+              bottom: 0,
+              elevation: 0,
+              borderTopColor: 'transparent',
+            },
           }}
         >
           <Tab.Screen name="Record" component={RecordScreen} />
@@ -46,5 +80,21 @@ function App() {
     </Provider>
   );
 }
+
+const styles = StyleSheet.create({
+  tabIconContainer: {
+    width: 44,
+    height: 44,
+    borderRadius: 22,
+    backgroundColor: 'transparent',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  tabIconImage: {
+    width: 24,
+    height: 24,
+    tintColor: '#83868D',
+  },
+});
 
 export default App;

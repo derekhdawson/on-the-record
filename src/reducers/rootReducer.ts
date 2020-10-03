@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import helloReducer from './helloReducer';
+import recordReducer from './recordReducer';
 
 const rootReducer = combineReducers({
-  hello: helloReducer,
+  record: recordReducer,
 });
 
 export type AppState = ReturnType<typeof rootReducer>;

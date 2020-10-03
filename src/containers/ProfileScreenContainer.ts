@@ -1,19 +1,24 @@
 import { Dispatch } from 'react';
 import { connect } from 'react-redux';
-import { HelloAction, setHello } from '../actions/helloActions';
+import RecordScreen from '../screens/Record/RecordScreen';
+
 import { AppState } from '../reducers/rootReducer';
-import ProfileScreen from '../screens/Profile/ProfileScreen';
+import {
+  RecordAction,
+  RecordingState,
+  setRecordingState,
+} from '../actions/recordActions';
 
 const mapStateToProps = (state: AppState) => {
   return {
-    hello: state.hello.helloText,
+    record: state.record,
   };
 };
 
-const mapDispatchToProps = (dispatch: Dispatch<HelloAction>) => ({
-  setText: (text: string) => {
-    dispatch(setHello(text));
+const mapDispatchToProps = (dispatch: Dispatch<RecordAction>) => ({
+  setRecordingState: (recordingState: RecordingState) => {
+    dispatch(setRecordingState(recordingState));
   },
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(ProfileScreen);
+export default connect(mapStateToProps, mapDispatchToProps)(RecordScreen);
