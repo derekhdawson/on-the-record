@@ -58,8 +58,6 @@ function App() {
             },
           })}
           tabBarOptions={{
-            activeTintColor: 'red',
-            inactiveTintColor: 'yellow',
             showLabel: false,
             style: {
               backgroundColor: 'transparent',

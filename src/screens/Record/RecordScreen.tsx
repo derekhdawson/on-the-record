@@ -13,6 +13,7 @@ import Marker from './Marker';
 import recordButtonImg from '../../images/record-button.png';
 import { RecordState } from '../../reducers/recordReducer';
 import { RecordingState } from '../../actions/recordActions';
+import { Recorder } from '@react-native-community/audio-toolkit';
 
 interface Props {
   record: RecordState;
@@ -21,8 +22,7 @@ interface Props {
   addMarker: () => void;
 }
 
-function RecordScreen(props: Props) {
-  console.log(props);
+export default function RecordScreen(props: Props) {
   return (
     <View style={styles.container}>
       {props.record.recordingState === RecordingState.Idling
@@ -38,7 +38,38 @@ const renderRecordButton = (
   return (
     <TouchableOpacity
       onPress={() => {
-        setRecordingState(RecordingState.Recording);
+        const recorderOptions = {
+          bitrate: 128000,
+          channels: 2,
+          sampleRate: 44100,
+          format: 'aac',
+          encoder: 'aac',
+          quality: 'max',
+        };
+        const recorder = new Recorder('file.aac', recorderOptions);
+        if (!recorder.canPrepare) {
+          console.log('ERROR: CAN NOT PREPARE RECORDING');
+          return;
+        }
+
+        recorder.prepare((error, filePath) => {
+          if (error) {
+            console.log(error);
+          } else {
+            if (!recorder.canRecord) {
+              console.log('ERROR: CAN NOT RECORD');
+              return;
+            }
+            recorder.record((error) => {
+              if (error) {
+                console.log(error);
+              } else {
+                setRecordingState(RecordingState.Recording);
+                console.log(filePath);
+              }
+            });
+          }
+        });
       }}
     >
       <Image style={styles.recordButtonImg} source={recordButtonImg} />
@@ -77,6 +108,8 @@ const renderRecording = (markers: number[], addMarker: () => void) => {
             addMarker();
           }}
         />
+        <View style={{ marginTop: 50 }} />
+        <Button title="SAVE" onPress={() => {}} />
       </View>
     </View>
   );
@@ -94,5 +127,3 @@ const styles = StyleSheet.create({
     width: 200,
   },
 });
-
-export default RecordScreen;

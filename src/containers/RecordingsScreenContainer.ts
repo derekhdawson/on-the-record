@@ -1,6 +1,5 @@
 import { Dispatch } from 'react';
 import { connect } from 'react-redux';
-import RecordScreen from '../screens/Record/RecordScreen';
 
 import { AppState } from '../reducers/rootReducer';
 import {
@@ -9,6 +8,7 @@ import {
   setRecordingState,
 } from '../actions/recordActions';
 import { MarkerAction } from '../actions/markerActions';
+import RecordingsScreen from '../screens/Recordings/RecordingsScreen';
 
 const mapStateToProps = (state: AppState) => {
   return {
@@ -24,4 +24,4 @@ const mapDispatchToProps = (
   },
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(RecordScreen);
+export default connect(mapStateToProps, mapDispatchToProps)(RecordingsScreen);
