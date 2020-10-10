@@ -8,6 +8,7 @@ import {
   RecordingState,
   setRecordingState,
 } from '../actions/recordActions';
+import { MarkerAction } from '../actions/markerActions';
 
 const mapStateToProps = (state: AppState) => {
   return {
@@ -15,7 +16,9 @@ const mapStateToProps = (state: AppState) => {
   };
 };
 
-const mapDispatchToProps = (dispatch: Dispatch<RecordAction>) => ({
+const mapDispatchToProps = (
+  dispatch: Dispatch<RecordAction | MarkerAction>,
+) => ({
   setRecordingState: (recordingState: RecordingState) => {
     dispatch(setRecordingState(recordingState));
   },

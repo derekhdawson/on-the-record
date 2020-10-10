@@ -8,16 +8,23 @@ import {
   RecordingState,
   setRecordingState,
 } from '../actions/recordActions';
+import { addMarker, MarkerAction } from '../actions/markerActions';
 
 const mapStateToProps = (state: AppState) => {
   return {
     record: state.record,
+    markers: state.marker.markers,
   };
 };
 
-const mapDispatchToProps = (dispatch: Dispatch<RecordAction>) => ({
+const mapDispatchToProps = (
+  dispatch: Dispatch<RecordAction | MarkerAction>,
+) => ({
   setRecordingState: (recordingState: RecordingState) => {
     dispatch(setRecordingState(recordingState));
+  },
+  addMarker: () => {
+    dispatch(addMarker());
   },
 });
 
